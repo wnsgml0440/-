@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rects = document.querySelectorAll('.rect')
+
+            rects.forEach((rect, index) => {
+                const width = (index + 1) * 100
+                const src = 'http://placekitten.com/s'+width+'/250'
+                rect.setAttribute('src', src)
+            })
+        })
+    </script>
+</head>
+<body>
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+</body>
+</html>
