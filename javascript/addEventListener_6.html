@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let[timer, timeID] = [0, 0]
+            const h1 = document.querySelector('h1')
+            const checkbox = document.querySelector('input')
+
+            checkbox.addEventListener('change', (event) => {
+                if (event.currentTarget.checked) {
+                    timerID = setInterval(() => {
+                        timer += 1
+                        h1.textContent = timer+'초'
+                    }, 1000)
+                } else {
+                    clearInterval(timerID)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="checkbox">
+    <span>타이머 활성화</span>
+    <h1></h1>
+</body>
+</html>
