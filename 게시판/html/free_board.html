@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet"
-    href="C:\Users\이준희\Desktop\실습\study\게시판\css\style.css"
-    href="C:\Users\이준희\Desktop\실습\study\게시판\css\free_board.css">
+    <link rel="stylesheet" href="C:\Users\이준희\Desktop\실습\study\게시판\css\style.css">
+    <link rel="stylesheet" href="C:\Users\이준희\Desktop\실습\study\게시판\css\board_base.css">
     <title>자유게시판</title>
 </head>
 <body>
@@ -29,21 +28,50 @@
             </li>
         </ul>
     </nav>
-    <ul>
-        <li>자유게시판</li>
-
-        <li>목록
-            <ul id="ulList">
-                <li>
-                    <ul>
-                        <li>No</li>
-                        <li>제목</li>
-                        <li>작성일</li>
-                        <li>작성자</li>
-                        <li>조회수</li>
-                    </ul>
-                </li>
-        </li>
-    </ul>
+    <table id="table_1">
+        <caption id="caption_1">자유게시판</caption>
+        <tr>
+            <th class="num">번호</th>
+            <th class="title">제목</th>
+            <th class="name">작성자</th>
+            <th class="date">작성일</th>
+            <th class="hits">조회수</th>
+        </tr>
+        <tr>
+            <td class="num">1</td>
+            <td class="title">첫 번째 게시판 제목</td>
+            <td class="name">관리자</td>
+            <td class="date">2022-5-30</td>
+            <td class="hits">0</td>
+        </tr>
+        <tr>
+            <td class="num">2</td>
+            <td class="title">두 번째 게시판 제목</td>
+            <td class="name">관리자</td>
+            <td class="date">2022-5-30</td>
+            <td class="hits">0</td>
+        </tr>
+        <tr>
+            <td class="num">3</td>
+            <td class="title">세 번째 게시판 제목</td>
+            <td class="name">관리자</td>
+            <td class="date">2022-5-30</td>
+            <td class="hits">0</td>
+        </tr>
+        <tr>
+            <td class="num">4</td>
+            <td class="title">네 번째 게시판 제목</td>
+            <td class="name">관리자</td>
+            <td class="date">2022-5-30</td>
+            <td class="hits">0</td>
+        </tr>
+        <tr>
+            <td class="num">5</td>
+            <td class="title">다섯 번째 게시판 제목</td>
+            <td class="name">관리자</td>
+            <td class="date">2022-5-30</td>
+            <td class="hits">0</td>
+        </tr>
+    </table>
 </body>
 </html>

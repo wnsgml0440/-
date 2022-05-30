@@ -1,0 +1,27 @@
+table#table_1 {
+    width: 1300px;
+    height: auto;
+    margin: 100px auto;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+}
+table#table_1 th {
+    height: 30px;
+    background-color: ivory;
+    border-bottom: solid 1px black;
+}
+
+caption#caption_1{
+    font-size: 30px;
+}
+
+th.num, th.name, th.date, th.hits {
+    width: 150px;
+}
+th.title {
+    width: 700px;
+}
+
+td.num, td.name, td.date, td.hits{
+    text-align: center;
+}

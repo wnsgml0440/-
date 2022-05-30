@@ -26,7 +26,12 @@
     list-style-type: none;
 }
 
-.nav_bar_1, .nav_bar_2 {
+.nav_bar_1 {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav_bar_2 {
     padding: 20px;
     cursor: pointer;
 }
