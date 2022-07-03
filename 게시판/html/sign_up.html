@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="C:\Users\이준희\Desktop\실습\study\게시판\css\style.css">
     <link rel="stylesheet" href="C:\Users\이준희\Desktop\실습\study\게시판\css\board_base.css">
+    <link rel="stylesheet" href="C:\Users\이준희\Desktop\실습\study\게시판\css\sign_up.css">
     <title>회원가입</title>
 </head>
 <body>
@@ -28,9 +29,141 @@
             </li>
         </ul>
     </nav>
-    <div class="wrap2">
-        <form>
-            
+    <div id="header">
+        <div id="wrapper">
+            <div id="content">
+
+                <!-- ID -->
+                <div>
+                    <h3>
+                        <label for="id">아이디</label>
+                    </h3>
+                    <span class="box int_id">
+                        <input type="text" id="id" class="int" maxlength="20">
+                    </span>
+                    <span class="error_next_box"></span>
+                </div>
+
+                <!-- PW -->
+                <div>
+                    <h3>
+                        <label for="password">비밀번호</label>
+                    </h3>
+                    <span class="box int_pw">
+                        <input type="text" id="pw" class="int" maxlength="20">
+                    </span>
+                    <span class="error_next_box"></span>
+                </div>
+
+                <!-- PW_CHECK -->
+                <div>
+                    <h3>
+                        <label for="password_check">비밀번호 재확인</label>
+                    </h3>
+                    <span class="box int_pw_check">
+                        <input type="text" id="pw_check" class="int" maxlength="20">
+                    </span>
+                    <span class="error_next_box"></span>
+                </div>
+
+                <!-- NAME -->
+                <div>
+                    <h3>
+                        <label for="name">이름</label>
+                    </h3>
+                    <span class="box int_name">
+                        <input type="text" id="name" class="int">
+                    </span>
+                    <span class="error_next_box"></span>
+                </div>
+
+                <!-- BIRTH -->
+                <div>
+                    <h3><label for="yy">생년월일</label></h3>
+
+                    <div id="birth_wrap">
+
+                        <!-- BIRTH_YY -->
+                        <div id="birth_yy">
+                            <span class="box">
+                                <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                            </span>
+                        </div>
+
+                        <!-- BIRTH_MM -->
+                        <div id="birth_mm">
+                            <span class="box">
+                                <select id="mm" class="sel">
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <!-- BIRTH_DD -->
+                        <div id="birth_dd">
+                            <span class="box">
+                                <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                            </span>
+                        </div>
+
+                    </div>
+                    <span class="error_next_box"></span>
+                </div>
+
+                <!-- GENDER -->
+                <div>
+                    <h3 class="join_title"><label for="gender">성별</label></h3>
+                    <span class="box gender_code">
+                        <select id="gender" class="sel">
+                            <option value="M">남자</option>
+                            <option value="F">여자</option>
+                        </select>
+                    </span>
+                    <span class="error_next_box">필수 정보입니다.</span>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <h3>
+                        <label for="Email">본인확인 이메일</label>
+                    </h3>
+                    <span class="box int_Email">
+                        <input type="text" id="Email" class="int">
+                    </span>
+                    <span class="error_next_box">이메일 주소를 다시 확인해주세요.</span>
+                </div>
+
+                <!-- pn=PhoneNumber -->
+                <div>
+                    <h3>
+                        <label for="PhoneNumber">휴대전화</label>
+                    </h3>
+                    <span class="box int_pn">
+                         <input type="tel" id="pn" class="int">
+                    </span>
+                    <span class="error_next_box"></span>
+                </div>               
+
+                <!-- JOIN BUTTON -->
+                <div class="btn_area" id="btnJoin">
+                    <button type="button">
+                        <span>가입하기</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
